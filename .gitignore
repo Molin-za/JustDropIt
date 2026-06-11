@@ -1,0 +1,23 @@
+# VS
+.vs/
+*.user
+*.slnx
+*.vcxproj
+*.vcxproj.filters
+
+# Build
+x64/
+Debug/
+Release/
+build/
+*.exe
+*.dll
+*.obj
+*.pdb
+
+# Temp
+codepoints*.txt
+test_chinese.txt
+MiniFb_part1.cpp
+OrderManager_test.cpp
+*.png
