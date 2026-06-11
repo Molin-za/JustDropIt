@@ -63,10 +63,9 @@ void ShopManager::refreshShop(int turnCounter) {
         //随机选择2-4中任意数量生成方块组合
         int blockCount = 2 + (std::rand() % 3);
 
-        //从池子里随机抽取每种方块的颜色(按比例权重)
+        //从池子里随机抽取每种方块的颜色
         std::vector<BlockType> chosenTypes;
         for (int b = 0; b < blockCount; ++b) {
-            // Build weighted list based on turn tier
             std::vector<BlockType> weightedPool;
             int baseW, tier3W, tier5W, tier8W;
             if (turnCounter >= 8)      { baseW = 40; tier3W = 30; tier5W = 20; tier8W = 10; }
